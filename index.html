@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="Es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header class="contenedor-titulo">
+
+        <img src="imagenes/Vector.png" alt="Logo de Alura con la inicial de la letra a">
+        <div class="contenedor-principal">
+            <h1 class="tituloPrincipal">Encriptador de texto</h1>
+        </div>
+        
+
+    </header>
+
+    <main>
+        <section>
+            <textarea class="input-texto" placeholder="Ingrese el texto aquí" cols="40" rows="8" autofocus></textarea>
+            <div class="botones">
+                <p class="atencion">ⓘ Solo letras minúsculas y sin acentos</p>
+                <button class="encriptar" onclick="btnEncriptar()"><span>Encriptar </span></button>
+                <button class="desencriptar" onclick="btnDesencriptar()"><span>Desencriptar </span></button>
+                
+                
+            </div>
+        </section>
+
+        <section>
+            <textarea class="mensaje" cols="18" rows="8"></textarea>
+            <button class="copiar" onclick="copiar()"><span>Copiar</span></button>
+            <h2 class="ningunMensaje">Ningún mensaje fue <br> encontrado</h2>
+            <p class="parrafo">Ingrese el texto que desees encriptar o <br> desencriptar.</p>
+        </section>    
+    </main>
+    <footer>
+        <p class="parrafo-footer">Creado por Marcos Aguilera. <a href="https://github.com/LemonDestiny"><img src="imagenes/GitHub-Mark-Light-32px.png" alt="icono de Github"></a> </p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
